@@ -2,22 +2,22 @@
 
 ## UI Pieces
 
-- header comment [ ]
-   - user name
-   - comment
+- header comment - [ ]
+   - user name [ ]
+   - comment [ ]
 - list of comments [ ]
-   - comment includes
-      - profile image placeholder
-      - user name
-      - edit button
-      - delete button
-      - actual comment
-      - input to edit comment
-      - submit button
+   - comment includes [ ]
+      - profile image placeholder [ ]
+      - user name [ ]
+      - edit button [ ]
+      - delete button [ ]
+      - actual comment [ ]
+      - input to edit comment [ ]
+      - submit button [ ]
 - comment input piece [ ]
-   - display name input
-   - comment input
-   - submit button
+   - display name input [ ]
+   - comment input [ ]
+   - submit button [ ]
 
 ## User Stories
 
