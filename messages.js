@@ -1,1 +1,4 @@
-let comment = [];
+let comments = [];
+let displayNameInput;
+let commentInput;
+
