@@ -1,4 +1,8 @@
 let comments = [];
-let displayNameInput;
-let commentInput;
+
+let displayNameInput = document.getElementById('displayNameInput').value;
+
+let commentInput = document.getElementById('commentInput').value;
+
+let profileImage = document.getElementById('profileImagePlaceholder').value;
 

@@ -6,7 +6,7 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: whitesmoke;
     position: relative;
-    padding-top: 150px;
+    padding-top: 175px;
     padding-bottom: 100px;
 }
 
@@ -17,14 +17,17 @@ header#firstComment {
     top: 0;
     position: fixed;
     left: 0;
+    right: 0;
     translate: translateX(-50%);
-    width: 100%;
+    
+
 }
 
 main {
     background-color: orange;
     margin: 16px;
     padding: 16px;
+    border-radius: 4px;
 }
 
 footer#entryBox {
