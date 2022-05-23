@@ -6,20 +6,16 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: whitesmoke;
     position: relative;
-    padding-top: 175px;
-    padding-bottom: 100px;
 }
 
 header#firstComment {
     background-color: green;
-    margin: 0 0 8px 0;
     padding: 16px;
     top: 0;
-    position: fixed;
+    position: sticky;
     left: 0;
     right: 0;
     translate: translateX(-50%);
-    
 
 }
 
@@ -33,10 +29,9 @@ main {
 footer#entryBox {
     background-color: red;
     padding: 16px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     translate:  translateX(-50%);
-    width: 100%;
 }
 
