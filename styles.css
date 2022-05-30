@@ -26,12 +26,13 @@ main {
     border-radius: 4px;
 }
 
-footer#entryBox {
+form#entryBox {
     background-color: red;
     padding: 16px;
     position: sticky;
     bottom: 0;
     left: 0;
+    right: 0;
     translate:  translateX(-50%);
 }
 
