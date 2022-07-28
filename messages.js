@@ -6,7 +6,7 @@ let comments = [
     },
     {
         displayName: "Charlie",
-        comment: 'another comet',
+        comment: 'another comment',
         id: 1
     }
 ];
