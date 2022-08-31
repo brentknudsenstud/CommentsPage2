@@ -19,6 +19,10 @@ let profileImage = document.getElementById('profileImagePlaceholder');
 
 const submitCommentButton =  document.getElementById('submitButton');
 
+let editPostedComment = document.getElementById('editPostedCommentButton');
+
+let deletePostedComment = document.getElementById('deletePostedCommentButton');
+
 function bindEditButtonListeners() {
     const editCommentButtons = document.querySelectorAll(".inputToEditCommentAndButtonToSubmitEditedComment")
     Array.from(editCommentButtons).forEach(function(buttonElement) {
@@ -65,8 +69,8 @@ function getCommentBoxAsString(displayName, comment, id) {
        <div>
             <h4>${displayName}</h4>
             <div>
-                <button>Edit</button>
-                <button>Delete</button>
+                <button id="editPostedCommentButton">Edit</button>
+                <button id="deletePostedCommentButton">Delete</button>
             </div>
             <div>
                 <p>${comment}</p>
@@ -100,4 +104,16 @@ submitCommentButton.addEventListener('click', function () {
     }
     
 } 
+)
+
+// function for edit button for posted comment
+editPostedCommentButton.addEventListener('click', function () {
+
+}
+)
+
+// function for delete button for posted comment
+deletePostedCommentButton.addEventListener('click', function () {
+
+}
 )
