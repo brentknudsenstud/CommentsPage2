@@ -108,12 +108,16 @@ submitCommentButton.addEventListener('click', function () {
 
 // function for edit button for posted comment
 editPostedCommentButton.addEventListener('click', function () {
+    const editCurrentComment = editPostedComment.value;
 
 }
 )
 
 // function for delete button for posted comment
 deletePostedCommentButton.addEventListener('click', function () {
-
+    const deleteCurrentComment = deletePostedComment.value;
+    if (deleteCurrentComment) {
+        return 
+    }
 }
 )
