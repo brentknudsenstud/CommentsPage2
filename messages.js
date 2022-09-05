@@ -21,7 +21,7 @@ const submitCommentButton =  document.getElementById('submitButton');
 
 let editPostedComment = document.getElementById('editPostedCommentButton');
 
-let deletePostedComment = document.getElementById('deletePostedCommentButton');
+let deletePostedComment = document.getElementById('commentText');
 
 function bindEditButtonListeners() {
     const editCommentButtons = document.querySelectorAll(".inputToEditCommentAndButtonToSubmitEditedComment")
@@ -73,7 +73,7 @@ function getCommentBoxAsString(displayName, comment, id) {
                 <button id="deletePostedCommentButton">Delete</button>
             </div>
             <div>
-                <p>${comment}</p>
+                <p id="commentText">${comment}</p>
             </div>  
             
             <div 
@@ -107,17 +107,15 @@ submitCommentButton.addEventListener('click', function () {
 )
 
 // function for edit button for posted comment
-editPostedCommentButton.addEventListener('click', function () {
-    const editCurrentComment = editPostedComment.value;
+// editPostedCommentButton.addEventListener('click', function () {
+//     const editCurrentComment = editPostedComment.value;
 
-}
-)
+// }
+// )
 
 // function for delete button for posted comment
-deletePostedCommentButton.addEventListener('click', function () {
-    const deleteCurrentComment = deletePostedComment.value;
-    if (deleteCurrentComment) {
-        return 
+deletePostedComment.addEventListener('click', function () {
+    const deleteCurrentComment = deletePostedCommentButton.value;
+        deleteCurrentComment.remove()
     }
-}
 )
