@@ -4,12 +4,12 @@ html {
 
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: whitesmoke;
+    background-color: rgb(243, 243, 187);
     position: relative;
 }
 
 header#firstComment {
-    background-color: green;
+    background-color: rgb(223, 161, 223);
     padding: 16px;
     top: 0;
     position: sticky;
@@ -19,15 +19,20 @@ header#firstComment {
 
 }
 
+.profileImagePlaceHolderDiv {
+    size: 14px;
+    background-color: red;
+}
+
 main {
-    background-color: orange;
+    background-color: rgb(243, 243, 187);
     margin: 16px;
     padding: 16px;
     border-radius: 4px;
 }
 
 form#entryBox {
-    background-color: red;
+    background-color: rgb(223, 161, 223);
     padding: 16px;
     position: sticky;
     bottom: 0;

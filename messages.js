@@ -85,6 +85,7 @@ function getCommentBoxAsString(displayName, comment, id) {
             </div>
         </div>`
 
+
 }
 
 submitCommentButton.addEventListener('click', function () {
@@ -115,7 +116,6 @@ submitCommentButton.addEventListener('click', function () {
 
 // function for delete button for posted comment
 deletePostedComment.addEventListener('click', function () {
-    const deleteCurrentComment = deletePostedCommentButton.value;
-        deleteCurrentComment.remove()
-    }
+    textComment.pop();
+}
 )
