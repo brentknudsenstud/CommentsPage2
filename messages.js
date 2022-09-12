@@ -1,3 +1,5 @@
+// const { connections } = require("mongoose");
+
 let comments = [
     {
         displayName: 'Brent',
@@ -69,6 +71,18 @@ function handleEditComment(e) {
    })
 }
 
+//Create edit button that brings up an input box to edit the posted comment and then prints back to the where the orignal comment was.
+editPostedComment.addEventListener('click', function () {
+    
+    const commentInputBox = document.createElement('div');
+
+    commentInputBox.innerHTML = "<input type='text' placeholder='Edit Comment' id='newInputBox'>";
+
+    document.getElementById('newInputBox').appendChild(commentInputBox);
+
+}
+)
+
 function handleDeleteComment(e) {
     const idToDelete = e.target.getAttribute('data-deletebuttonid');
     const commentElement = document.body.querySelector(`[data-commentcontainerid = '${idToDelete}']`);
@@ -95,7 +109,7 @@ function getCommentBoxAsString(displayName, comment, id) {
             
             <div 
             class="inputToEditCommentAndButtonToSubmitEditedComment">
-                <input type="text" placeholder="Edit Comment">
+                <input type="text" placeholder="Edit Comment" id='newInputBox'>
                 <button data-commentId = "${id}">Submit</button>
             </div>  
             </div>
@@ -124,18 +138,3 @@ submitCommentButton.addEventListener('click', function () {
 } 
 )
 
-//Create edit button that brings up an input box to edit the posted comment and then prints back to the where the orignal comment was.
-
-
-
-// function for edit button for posted comment
-editPostedCommentButton.addEventListener('click', function () {
-    const editCurrentComment = editPostedComment.value;
-    // when edit button is clicked it creates an input box
-
-    // when text in input button is submitted, it changes text in commentText
-
-}
-)
-
-//

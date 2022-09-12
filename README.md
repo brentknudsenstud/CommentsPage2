@@ -11,7 +11,7 @@
       - user name [ ]
       - edit button [ ]
       - delete button [ ]
-         - does the delete button delete the item in the list of comments or does it just delete the comment part? I think I just want it to delete the text of the comment. That seems to make more sense.
+         - does the delete button delete the item in the list of comments or does it just delete the comment part? I made it so it deletes the whole entry.
       - actual comment [ ]
       - input to edit comment [ ]
       - submit button [ ]
