@@ -20,7 +20,7 @@ header#firstComment {
 }
 
 .profileImagePlaceHolderDiv {
-    size: 14px;
+    font-size: 14px;
     background-color: red;
 }
 

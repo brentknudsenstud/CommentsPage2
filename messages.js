@@ -2,12 +2,12 @@ let comments = [
     {
         displayName: 'Brent',
         comment: 'a comment',
-        id: 0
+        id: '0'
     },
     {
         displayName: "Charlie",
         comment: 'another comment',
-        id: 1
+        id: '1'
     }
 ];
 
@@ -21,14 +21,21 @@ const submitCommentButton =  document.getElementById('submitButton');
 
 let editPostedComment = document.getElementById('editPostedCommentButton');
 
-let deletePostedComment = document.getElementById('commentText');
+let deletePostedComment = document.getElementById('deletePostedCommentButton');
 
 function bindEditButtonListeners() {
     const editCommentButtons = document.querySelectorAll(".inputToEditCommentAndButtonToSubmitEditedComment")
     Array.from(editCommentButtons).forEach(function(buttonElement) {
         buttonElement.addEventListener('click', handleEditComment)
     })
-};
+}
+
+function bindDeleteButtonListeners() {
+    const deleteCommentButtons = document.querySelectorAll(".deletePostedCommentButton")
+    Array.from(deleteCommentButtons).forEach(function(buttonElement) {
+        buttonElement.addEventListener('click', handleDeleteComment)
+    })
+}
 function renderComments() {
     // everything in comments to be rendered in the DOM in between main tags
     const mainElement = document.getElementsByTagName("main")[0];
@@ -42,6 +49,7 @@ function renderComments() {
    
     mainElement.innerHTML = htmlComment;
     bindEditButtonListeners();
+    bindDeleteButtonListeners();
 }
 
 renderComments();
@@ -61,28 +69,37 @@ function handleEditComment(e) {
    })
 }
 
+function handleDeleteComment(e) {
+    const idToDelete = e.target.getAttribute('data-deletebuttonid');
+    const commentElement = document.body.querySelector(`[data-commentcontainerid = '${idToDelete}']`);
+
+    commentElement.remove();
+    comments = comments.filter(x => x.id !== idToDelete)
+}
+
 function getCommentBoxAsString(displayName, comment, id) {
 
-    return `<div class="profileImagePlaceholderDiv">
+    return `<div data-commentContainerId = "${id}">
+    <div class="profileImagePlaceholderDiv" >
         <i class="profileImagePlaceholder" class="fa-solid fa-user"></i>
        </div>
        <div>
             <h4>${displayName}</h4>
             <div>
-                <button id="editPostedCommentButton">Edit</button>
-                <button id="deletePostedCommentButton">Delete</button>
+                <button class="editPostedCommentButton" data-commentButtonId = "${id}">Edit</button>
+                <button class="deletePostedCommentButton" data-deleteButtonId = "${id}">Delete</button>
             </div>
             <div>
                 <p id="commentText">${comment}</p>
             </div>  
             
             <div 
-            
             class="inputToEditCommentAndButtonToSubmitEditedComment">
                 <input type="text" placeholder="Edit Comment">
                 <button data-commentId = "${id}">Submit</button>
             </div>  
             </div>
+        </div>
         </div>`
 
 
@@ -107,15 +124,18 @@ submitCommentButton.addEventListener('click', function () {
 } 
 )
 
+//Create edit button that brings up an input box to edit the posted comment and then prints back to the where the orignal comment was.
+
+
+
 // function for edit button for posted comment
-// editPostedCommentButton.addEventListener('click', function () {
-//     const editCurrentComment = editPostedComment.value;
+editPostedCommentButton.addEventListener('click', function () {
+    const editCurrentComment = editPostedComment.value;
+    // when edit button is clicked it creates an input box
 
-// }
-// )
+    // when text in input button is submitted, it changes text in commentText
 
-// function for delete button for posted comment
-deletePostedComment.addEventListener('click', function () {
-    textComment.pop();
 }
 )
+
+//
