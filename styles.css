@@ -19,9 +19,10 @@ header#firstComment {
 
 }
 
-.profileImagePlaceHolderDiv {
+.profileImagePlaceHolder {
     font-size: 14px;
     background-color: red;
+    display: inline;
 }
 
 main {

@@ -1,15 +1,17 @@
 let comments = [
-    {
-        displayName: 'Brent',
-        comment: 'a comment',
-        id: '0'
-    },
-    {
-        displayName: "Charlie",
-        comment: 'another comment',
-        id: '1'
-    }
+    // {
+    //     displayName: 'Brent',
+    //     comment: 'a comment',
+    //     id: '0'
+    // },
+    // {
+    //     displayName: "Charlie",
+    //     comment: 'another comment',
+    //     id: '1'
+    // }
 ];
+
+const main = document.getElementsByTagName('main')[0];
 
 let displayNameInput = document.getElementById('displayNameInput');
 
@@ -22,6 +24,29 @@ const submitCommentButton =  document.getElementById('submitButton');
 let editPostedComment = document.getElementById('editPostedCommentButton');
 
 let deletePostedComment = document.getElementById('deletePostedCommentButton');
+
+// const edit = div.getElementsByClassName('editPostedCommentButton')[0];
+// const content = div.getElementsByClassName('commentText')[0];
+
+// const input = content;
+
+// input.setAttribute('placeholder', 'Edit Comment');
+
+// const contentContainer = content.parentElement;
+
+const save = document.createElement('button');
+save.innerText='Save';
+
+// edit.addEventListener('click', function (e) {
+//     contentContainer.innerHTML = '';
+//     contentContainer.append(content);
+// })
+
+save.addEventListener('click', function (e) {
+    comment.content = input.value;
+    content.innerText - input.value;
+    contentContainer.append(content);
+})
 
 function bindEditButtonListeners() {
     const editCommentButtons = document.querySelectorAll(".inputToEditCommentAndButtonToSubmitEditedComment")
@@ -36,6 +61,7 @@ function bindDeleteButtonListeners() {
         buttonElement.addEventListener('click', handleDeleteComment)
     })
 }
+
 function renderComments() {
     // everything in comments to be rendered in the DOM in between main tags
     const mainElement = document.getElementsByTagName("main")[0];
@@ -50,8 +76,8 @@ function renderComments() {
     mainElement.innerHTML = htmlComment;
     bindEditButtonListeners();
     bindDeleteButtonListeners();
-}
 
+}
 renderComments();
 
 function handleEditComment(e) {
@@ -69,8 +95,9 @@ function handleEditComment(e) {
    })
 }
 
-//Create edit button that brings up an input box to edit the posted comment and then prints back to the where the orignal comment was.
-editPostedComment.addEventListener('click', function () {
+//Create edit button that brings up an input box to edit the posted comment and then prints back to where the orignal comment was.
+
+    editPostedComment.addEventListener('click', function () {
     
     const commentInputBox = document.createElement('div');
     const editButtonElement = document.body.querySelector(`[data-editButtonContainerId = '${idToAddInputBox}']`);
@@ -80,8 +107,6 @@ editPostedComment.addEventListener('click', function () {
     // commentInputBox.innerHTML = "<input type='text' placeholder='Edit Comment' id='newInputBox'>";
 
     document.getElementById('newInputBox').appendChild(commentInputBox);
-
-    console.log('tried to create input')
 
 }
 )
@@ -125,6 +150,7 @@ function getCommentBoxAsString(displayName, comment, id) {
 }
 
 submitCommentButton.addEventListener('click', function () {
+    alert('submit button clicked!');
     const newDisplayName = displayNameInput.value;
     const newDisplayComment = commentInput.value;
     const newComment = {
