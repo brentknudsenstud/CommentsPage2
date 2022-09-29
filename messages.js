@@ -1,5 +1,3 @@
-// const { connections } = require("mongoose");
-
 let comments = [
     {
         displayName: 'Brent',
@@ -75,10 +73,15 @@ function handleEditComment(e) {
 editPostedComment.addEventListener('click', function () {
     
     const commentInputBox = document.createElement('div');
+    const editButtonElement = document.body.querySelector(`[data-editButtonContainerId = '${idToAddInputBox}']`);
 
-    commentInputBox.innerHTML = "<input type='text' placeholder='Edit Comment' id='newInputBox'>";
+    editButtonElement.innerHTML = "<input type='text' placeholder='Edit Comment' id='newInputBox'>";
+
+    // commentInputBox.innerHTML = "<input type='text' placeholder='Edit Comment' id='newInputBox'>";
 
     document.getElementById('newInputBox').appendChild(commentInputBox);
+
+    console.log('tried to create input')
 
 }
 )
@@ -100,7 +103,9 @@ function getCommentBoxAsString(displayName, comment, id) {
        <div>
             <h4>${displayName}</h4>
             <div>
-                <button class="editPostedCommentButton" data-commentButtonId = "${id}">Edit</button>
+            <div data-editButtonContainerId = '${id}'>
+                <button id="editPostedCommentButton" data-commentButtonId = "${id}">Edit</button>
+            </div>    
                 <button class="deletePostedCommentButton" data-deleteButtonId = "${id}">Delete</button>
             </div>
             <div>
