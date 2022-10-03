@@ -63,7 +63,7 @@ function bindDeleteButtonListeners() {
 }
 
 function renderComments() {
-    // everything in comments to be rendered in the DOM in between main tags
+    
     const mainElement = document.getElementsByTagName("main")[0];
     
     let htmlComment = '';
