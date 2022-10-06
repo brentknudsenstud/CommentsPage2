@@ -6,20 +6,11 @@
     <title>Comments Practice</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/b3c9d3c3a4.js" crossorigin="anonymous"></script>
-    
-
 </head>
 <body>
-    <header id="firstComment">
-        <h4>WhySoSerious2345</h14>
-        <h1>Considering a career change? Programming is the right move. Change my mind.</h1>
-    </header>
-    <main>
-        
+    <main>   
     </main>
-    
-    
-    <form onsubmit="return false" id="entryBox">
+    <form id="entryBox">
         <div id="displayName">
             <input id="displayNameInput" placeholder="Display Name">
         </div>
@@ -30,7 +21,11 @@
             <button id="submitButton" type="submit">Submit</button>
         </div>
     </form>
-    
-    <script src="messages.js" ></script>
+    <script src="./src/state.js" type="module"></script>
+    <script src="./src/domUtils.js" type="module"></script>
+    <script src="./src/actions.js" type="module"></script>
+    <script src="./src/bindEventToActions.js" type="module"></script>
+    <script src="./src/initialLoad.js" type="module"></script>
+    <!-- <script src="messages.js" ></script> -->
 </body>
 </html>

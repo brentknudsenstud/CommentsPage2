@@ -2,9 +2,6 @@
 
 ## UI Pieces
 
-- header comment - [ ]
-   - user name [ ]
-   - comment [ ]
 - list of comments [ ]
    - comment includes [ ]
       - profile image placeholder [ ]
