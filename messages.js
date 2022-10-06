@@ -1,14 +1,14 @@
 let comments = [
-    // {
-    //     displayName: 'Brent',
-    //     comment: 'a comment',
-    //     id: '0'
-    // },
-    // {
-    //     displayName: "Charlie",
-    //     comment: 'another comment',
-    //     id: '1'
-    // }
+    {
+        displayName: 'Brent',
+        comment: 'a comment',
+        id: '0'
+    },
+    {
+        displayName: "Charlie",
+        comment: 'another comment',
+        id: '1'
+    }
 ];
 
 const main = document.getElementsByTagName('main')[0];
