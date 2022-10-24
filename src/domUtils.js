@@ -3,6 +3,10 @@ import { getComments } from './state.js';
 // =======================
 // Grab things from the page
 
+export function getPhotoValue() {
+    return 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80';
+}
+
 export function getNameInputValue() {
     const nameInputElement = document.querySelector('#displayNameInput');
 
@@ -40,12 +44,13 @@ export function clearNameAndCommentInputs() {
 // =======================
 // Rendering Comments
 
-function getCommentBoxAsString(name, comment, id) {
+function getCommentBoxAsString(name, comment, id, photo) {
 
     return `
         <div data-commentContainerId = "${id}">
             <div class="profileImagePlaceholderDiv" >
                 <i class="profileImagePlaceholder" class="fa-solid fa-user"></i>
+                <img src="${photo}" width="32"></img>
             </div>
             <div>
                     <h4>${name}</h4>
@@ -75,7 +80,7 @@ function getCommentBoxAsString(name, comment, id) {
 export function renderComments() {
     const mainElement = document.querySelector("main");
     const comments = getComments();
-    const commentsAsHTML = comments.reduce((html, { name, comment, id}) => `${html}${getCommentBoxAsString(name, comment, id)}`, '');
+    const commentsAsHTML = comments.reduce((html, { name, comment, id, photo}) => `${html}${getCommentBoxAsString(name, comment, id, photo)}`, '');
    
     mainElement.innerHTML = commentsAsHTML;
 

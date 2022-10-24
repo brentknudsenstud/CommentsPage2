@@ -9,10 +9,10 @@ function getRandomId(){
     return crypto.randomUUID()
 }
 
-export function addComment({ name, comment }) {
+export function addComment({ photo, name, comment }) {
     const id = getRandomId();
     
-    comments = [ {name, comment}, ...comments]
+    comments = [ {photo, name, comment}, ...comments]
 }
 
 export function deleteComment(idToDelete) {
