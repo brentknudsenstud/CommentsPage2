@@ -4,7 +4,7 @@ html {
 
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(243, 243, 187);
+    background-color: rgb(234, 234, 210);
     position: relative;
 }
 
@@ -21,24 +21,46 @@ header#firstComment {
 
 .profileImagePlaceHolder {
     font-size: 14px;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     display: inline;
 }
 
 main {
-    background-color: rgb(243, 243, 187);
+    background-color: rgb(240, 240, 234);
     margin: 16px;
     padding: 16px;
     border-radius: 4px;
 }
 
 form#entryBox {
-    background-color: rgb(223, 161, 223);
+    background-color: rgb(250, 247, 252);
     padding: 16px;
     position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
     translate:  translateX(-50%);
+}
+
+#displayNameInput, #commentInput {
+    margin: 0 0 16px 0;
+    padding: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width:300px;
+}
+
+#submitButton {
+    border-radius: 8px;
+    border: solid 2px rgb(188, 188, 62);
+    padding: 8px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(234, 234, 210);
+    transition: background-color 2s;
+}
+
+#submitButton:hover {
+    background-color:rgb(243, 243, 148);
+
 }
 
