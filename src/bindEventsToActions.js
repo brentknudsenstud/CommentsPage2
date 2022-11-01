@@ -27,7 +27,8 @@ export function bindEditActionToEditCommentButtons() {
     document.body.addEventListener( 'click', function ( event ) {
        
         const editButtonId = getEditCommentIdFromEvent(event);
-        const isClickedItemAnEditButton = !!deleteButtonId;
+        // below changed deleteButtonId to editButtonId
+        const isClickedItemAnEditButton = !!editButtonId;
         
         if(isClickedItemAnEditButton) {
             handleEditCommentAction(editButtonId);
