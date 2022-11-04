@@ -5,7 +5,7 @@ export function bindSubmitCommentAction() {
     const submitButton = getSubmitButton();
 
     submitButton.addEventListener('click', () => {
-        handleSubmitCommentAction();
+        handleSubmitCommentAction(); 
     })
 }
 
