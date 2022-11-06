@@ -25,6 +25,10 @@ header#firstComment {
     display: inline;
 }
 
+#editPostedCommentButton, #deletePostedCommentButton, #submitEditedCommentButton, #newInputBox {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 main {
     background-color: rgb(240, 240, 234);
     margin: 16px;
@@ -42,23 +46,28 @@ form#entryBox {
     translate:  translateX(-50%);
 }
 
-#displayNameInput, #commentInput {
+#displayNameInput, #commentInput, #newInputBox {
     margin: 0 0 16px 0;
     padding: 8px;
     font-family: 'Roboto Condensed', sans-serif;
     width:300px;
 }
 
-#submitButton {
+#editPostedCommentButton, #deletePostedCommentButton, #submitButton, #submitEditedCommentButton {
     border-radius: 8px;
     border: solid 2px rgb(188, 188, 62);
     padding: 8px;
+    margin: 8px 0 8px 0;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(234, 234, 210);
     transition: background-color .5s ease-in-out;
 }
 
-#submitButton:hover {
+#submitEditedCommentButton {
+    margin: 0 0 0 16px;
+}
+
+#editPostedCommentButton:hover, #deletePostedCommentButton:hover, #submitButton:hover, #submitEditedCommentButton:hover {
     background-color:rgb(243, 243, 148);
 
 }
