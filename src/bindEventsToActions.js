@@ -17,6 +17,7 @@ export function bindDeleteActionToDeleteCommentButtons() {
         
         if(isClickedItemADeleteButton) {
             handleDeleteCommentAction(deleteButtonId);
+            // loop to go through array and remove entire comment with profile pic, name and comment
         };
         
         event.preventDefault();
@@ -32,8 +33,10 @@ export function bindEditActionToEditCommentButtons() {
         
         if(isClickedItemAnEditButton) {
             handleEditCommentAction(editButtonId);
+            // when edit button is clicked, populate an input box
         };
         
         event.preventDefault();
     });
 }
+

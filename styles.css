@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(234, 234, 210);
     position: relative;
 }
@@ -45,7 +45,7 @@ form#entryBox {
 #displayNameInput, #commentInput {
     margin: 0 0 16px 0;
     padding: 8px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     width:300px;
 }
 
@@ -53,8 +53,7 @@ form#entryBox {
     border-radius: 8px;
     border: solid 2px rgb(188, 188, 62);
     padding: 8px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(234, 234, 210);
     transition: background-color .5s ease-in-out;
 }
