@@ -72,3 +72,6 @@ form#entryBox {
 
 }
 
+.hide {
+    display: none;
+}

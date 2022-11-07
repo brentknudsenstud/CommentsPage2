@@ -12,7 +12,7 @@ function getRandomId(){
 export function addComment({ photo, name, comment }) {
     const id = getRandomId();
     
-    comments = [ {photo, name, comment}, ...comments]
+    comments = [ {photo, name, comment, id}, ...comments]
 }
 
 export function deleteComment(idToDelete) {

@@ -29,7 +29,7 @@ export function getDeleteCommentIdFromEvent(e) {
 }
 
 export function getEditCommentIdFromEvent(e) {
-    return e.target.getAttribute('data-editButtonId')
+    return e.target.getAttribute('data-editButtonId');
 }
 
 // clear inputs
@@ -65,9 +65,9 @@ function getCommentBoxAsString(name, comment, id, photo) {
                     </div>  
                     
                     <div 
-                    class="inputToEditCommentAndButtonToSubmitEditedComment">
+                    class="inputToEditCommentAndButtonToSubmitEditedComment hide">
                         <input type="text" placeholder="Edit Comment" id='newInputBox'>
-                        <button data-commentId = "${id}" id="submitEditedCommentButton">Submit</button>
+                        <button data-commentId="${id}" id="submitEditedCommentButton">Submit</button>
                     </div>  
                     </div>
                 </div>

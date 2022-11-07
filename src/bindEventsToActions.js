@@ -1,4 +1,4 @@
-import { handleSubmitCommentAction, handleDeleteCommentAction, handleEditCommentAction } from './actions.js';
+import { handleSubmitCommentAction, handleDeleteCommentAction, handleClickedEditButton } from './actions.js';
 import { getSubmitButton, getDeleteCommentIdFromEvent, getEditCommentIdFromEvent } from "./domUtils.js";
 
 export function bindSubmitCommentAction() {
@@ -28,12 +28,12 @@ export function bindEditActionToEditCommentButtons() {
     document.body.addEventListener( 'click', function ( event ) {
        
         const editButtonId = getEditCommentIdFromEvent(event);
-        // below changed deleteButtonId to editButtonId
         const isClickedItemAnEditButton = !!editButtonId;
         
         if(isClickedItemAnEditButton) {
-            handleEditCommentAction(editButtonId);
+            handleClickedEditButton(editButtonId);
             // when edit button is clicked, populate an input box
+            
         };
         
         event.preventDefault();
