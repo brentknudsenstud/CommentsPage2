@@ -32,7 +32,7 @@ export function bindEditActionToEditCommentButtons() {
         
         if(isClickedItemAnEditButton) {
             handleClickedEditButton(editButtonId);
-            // when edit button is clicked, populate an input box
+            // when edit button is clicked, populate an input box (see actions.js file)
             
         };
         

@@ -30,3 +30,27 @@ export function handleClickedEditButton(id) {
     }
 
 }
+
+export function submitEditedMessageToReplacePreviousMessage(id) {
+    
+    const editedMessageToSubmit = document.
+    getElementById("newInputBox");
+    
+
+    editedMessageToSubmit.addEventListener("click", (event) => {
+        if ("newInputBox" == "") {
+            alert("Please fill out input box with edited comment.");
+        } else if("newIputBox" != "") {
+            // replace current comment with new comment by grabbing current comment (use the id?) and populating
+            console.log("not empty input");
+        }
+    })
+
+    // Example code below
+    // btn.addEventListener("click", (e) => {
+    //     box.click();
+    //   });
+
+
+
+}
