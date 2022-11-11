@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
     width: 100%;
 }
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     background-color: rgb(234, 234, 210);
     position: relative;
 }
@@ -26,7 +29,8 @@ header#firstComment {
 }
 
 #editPostedCommentButton, #deletePostedCommentButton, #submitEditedCommentButton, #newInputBox {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 main {
@@ -49,16 +53,16 @@ form#entryBox {
 #displayNameInput, #commentInput, #newInputBox {
     margin: 0 0 16px 0;
     padding: 8px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width:300px;
 }
 
 #editPostedCommentButton, #deletePostedCommentButton, #submitButton, #submitEditedCommentButton {
     border-radius: 8px;
     border: solid 2px rgb(188, 188, 62);
-    padding: 8px;
+    padding: 8px 12px;
     margin: 8px 0 8px 0;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(234, 234, 210);
     transition: background-color .5s ease-in-out;
 }
