@@ -41,7 +41,7 @@ export function submitEditedMessageToReplacePreviousMessage(id) {
             alert("Please write edited comment.");
         } else if (inputTextForEditedComment != "") {
             // replace current comment with new comment by grabbing current comment (use the id?) and populating
-            console.log("not empty input");
+            
         }
     })
 
