@@ -1,10 +1,11 @@
 import { getComments } from './state.js';
+import { submitEditedMessageToReplacePreviousMessage } from './actions.js';
 
 // =======================
 // Grab things from the page
 
 export function getPhotoValue() {
-    return 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80';
+    return 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2680&q=80'
 }
 
 export function getNameInputValue() {

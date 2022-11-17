@@ -36,11 +36,11 @@ export function submitEditedMessageToReplacePreviousMessage(id) {
     const editedMessageToSubmit = document.getElementById("submitEditedCommentButton");
     const inputTextForEditedComment = document.getElementById("newInputBox").value;
 
-    editedMessageToSubmit.addEventListener("click", (e) => {
-        if (inputTextForEditedComment == "") {
+    editedMessageToSubmit.addEventListener("click", () => {
+        if (inputTextForEditedComment === "") {
             alert("Please write edited comment.");
-        } else if (inputTextForEditedComment != "") {
-            // replace current comment with new comment by grabbing current comment (use the id?) and populating
+        } else if (inputTextForEditedComment !== "") {
+            // replace current comment with new comment by grabbing current comment (use the id?)
             console.log("text box was not empty");
         }
     })
