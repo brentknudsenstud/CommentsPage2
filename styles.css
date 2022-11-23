@@ -70,13 +70,15 @@ form#entryBox {
 }
 
 #editPostedCommentButton, #deletePostedCommentButton, #submitButton, #submitEditedCommentButton {
-    border-radius: 8px;
-    border: solid 2px rgb(188, 188, 62);
+    /* border-radius: 8px; */
+    /* border: solid 2px rgb(188, 188, 62); */
+    border: none;
     padding: 8px 12px;
     margin: 8px 0 8px 0;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(234, 234, 210);
-    transition: background-color .5s ease-in-out;
+    font-size: 24px;
+    /* background-color: rgb(234, 234, 210);
+    transition: background-color .5s ease-in-out; */
 }
 
 #submitEditedCommentButton {

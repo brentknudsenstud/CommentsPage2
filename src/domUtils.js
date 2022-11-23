@@ -57,9 +57,8 @@ function getCommentBoxAsString(name, comment, id, photo) {
                     <h4>${name}</h4>
                     <div>
                     <div data-editButtonContainerId = '${id}'>
-                        <button id="editPostedCommentButton" data-editButtonId = "${id}">Edit</button>
-                    </div>    
-                        <button id="deletePostedCommentButton" data-deleteButtonId = "${id}">Delete</button>
+                        <button id="editPostedCommentButton" data-editButtonId = "${id}">&#128221;</button>
+                        <button id="deletePostedCommentButton" data-deleteButtonId = "${id}">&#128465;</button>
                     </div>
                     <div>
                         <p id="commentText">${comment}</p>
@@ -68,7 +67,7 @@ function getCommentBoxAsString(name, comment, id, photo) {
                     <div 
                     class="inputToEditCommentAndButtonToSubmitEditedComment hide">
                         <input type="text" placeholder="Edit Comment" id='newInputBox' class="input-color-change">
-                        <button data-commentId="${id}" id="submitEditedCommentButton">Submit</button>
+                        <button data-commentId="${id}" id="submitEditedCommentButton">&#9989;</button>
                     </div>  
                     </div>
                 </div>
