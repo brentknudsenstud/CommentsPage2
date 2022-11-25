@@ -85,10 +85,10 @@ form#entryBox {
     margin: 0 0 0 16px;
 }
 
-#editPostedCommentButton:hover, #deletePostedCommentButton:hover, #submitButton:hover, #submitEditedCommentButton:hover {
+/* #editPostedCommentButton:hover, #deletePostedCommentButton:hover, #submitButton:hover, #submitEditedCommentButton:hover {
     background-color:rgb(243, 243, 148);
 
-}
+} */
 
 .hide {
     display: none;
