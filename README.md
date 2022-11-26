@@ -32,4 +32,4 @@
   - display input to edit comment below the user name and profile image [ x ]
 - deleting submitted comment [ x ]
    - click delete button [ x ]
-   - get rid of the listed item [  ]
+   - get rid of the listed item [ x ]

@@ -40,8 +40,6 @@ export function clearNameAndCommentInputs() {
 
     nameInputElement.value = '';
     commentInputElement.value = '';
-    
-
 
 }
 
