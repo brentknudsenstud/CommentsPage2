@@ -26,7 +26,7 @@
      - show the comment in input [ x ]
   - clicking submit button [ x ]
      - display user name and comment at top of list [ x ]
-     - clear user name and comment from input box [ x ]
+     - clear user name and comment from input box [  ]
 - editing submitted comment [ x ]
   - click edit button [ x ]
   - display input to edit comment below the user name and profile image [ x ]
