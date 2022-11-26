@@ -7,6 +7,7 @@ export function bindSubmitCommentAction() {
     submitButton.addEventListener('click', () => {
         handleSubmitCommentAction(); 
     })
+
 }
 
 export function bindDeleteActionToDeleteCommentButtons() {

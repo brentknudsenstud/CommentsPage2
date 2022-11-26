@@ -1,4 +1,4 @@
-import { getPhotoValue, getNameInputValue, getCommentInputValue, renderComments, renderInvalidInputOnSubmit} from './domUtils.js';
+import { getPhotoValue, getNameInputValue, getCommentInputValue, renderComments, renderInvalidInputOnSubmit, clearNameAndCommentInputs} from './domUtils.js';
 import { addComment, deleteComment, editComment } from './state.js';
 
 export function handleSubmitCommentAction() {
@@ -13,6 +13,7 @@ export function handleSubmitCommentAction() {
     } else {
         renderInvalidInputOnSubmit();
     }
+    
 }
 
 export function handleDeleteCommentAction(id) {
