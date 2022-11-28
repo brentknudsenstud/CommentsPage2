@@ -53,9 +53,10 @@ function getCommentBoxAsString(name, comment, id, photo) {
             <div class="profileImagePlaceholderDiv" >
                 <i class="profileImagePlaceholder" class="fa-solid fa-user"></i>
                 <img class="profileImage"src="${photo}" width="32"></img>
+                <p class="displayName">${name}</p>
             </div>
             <div>
-                <p class="displayName">${name}</p>
+                
                 <div>
                     <div id="comment-edit-delete-container">
                         <div class="comment">

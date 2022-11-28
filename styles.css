@@ -31,7 +31,14 @@ header#firstComment {
 }
 
 .displayName {
-    margin: 4px 0 -4px 0;
+    margin: 4px 0 16px 8px;
+    font-weight: 900;
+}
+
+.profileImagePlaceholderDiv {
+    display: flex;
+    align-items: flex-start;
+
 }
 
 #editPostedCommentButton, #deletePostedCommentButton, #submitEditedCommentButton, #newInputBox {
