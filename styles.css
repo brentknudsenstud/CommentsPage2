@@ -22,10 +22,16 @@ header#firstComment {
 
 }
 
-.profileImagePlaceHolder {
+.profileImage {
     font-size: 14px;
     background-color: rgb(255, 255, 255);
     display: inline;
+    border: 0 solid rgb(240, 240, 234);
+    border-radius: 18px;
+}
+
+.displayName {
+    margin: 4px 0 -4px 0;
 }
 
 #editPostedCommentButton, #deletePostedCommentButton, #submitEditedCommentButton, #newInputBox {
@@ -38,6 +44,10 @@ main {
     margin: 16px;
     padding: 16px;
     border-radius: 4px;
+}
+
+.profileImage-comment-edit-delete-input-submit-container {
+    margin: 0 0 36px 0;
 }
 
 form#entryBox {
@@ -69,17 +79,30 @@ form#entryBox {
     width:300px;
 }
 
-#editPostedCommentButton, #deletePostedCommentButton, #submitButton, #submitEditedCommentButton {
-    /* border-radius: 8px; */
-    /* border: solid 2px rgb(188, 188, 62); */
+#editPostedCommentButton, #deletePostedCommentButton {
+    border-radius: 8px;
+    border: solid 2px rgb(188, 188, 62);
+    border: none;
+    padding: 8px 12px;
+    margin: 8px 4px 8px 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: rgb(234, 234, 210);
+    transition: background-color .5s ease-in-out;
+}
+
+#submitButton, #submitEditedCommentButton {
+    border-radius: 8px;
+    border: solid 2px rgb(188, 188, 62);
     border: none;
     padding: 8px 12px;
     margin: 8px 0 8px 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     cursor: pointer;
-    /* background-color: rgb(234, 234, 210);
-    transition: background-color .5s ease-in-out; */
+    background-color: rgb(234, 234, 210);
+    transition: background-color .5s ease-in-out;
 }
 
 #submitEditedCommentButton {
@@ -93,4 +116,11 @@ form#entryBox {
 
 .hide {
     display: none;
+}
+
+#comment-edit-delete-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }

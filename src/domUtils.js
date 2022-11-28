@@ -49,29 +49,31 @@ export function clearNameAndCommentInputs() {
 function getCommentBoxAsString(name, comment, id, photo) {
 
     return `
-        <div data-commentContainerId = "${id}">
+        <div data-commentContainerId = "${id}" class="profileImage-comment-edit-delete-input-submit-container">
             <div class="profileImagePlaceholderDiv" >
                 <i class="profileImagePlaceholder" class="fa-solid fa-user"></i>
-                <img src="${photo}" width="32"></img>
+                <img class="profileImage"src="${photo}" width="32"></img>
             </div>
             <div>
-                    <h4>${name}</h4>
-                    <div>
-                    <div data-editButtonContainerId = '${id}'>
-                        <button id="editPostedCommentButton" data-editButtonId = "${id}">&#128221;</button>
-                        <button id="deletePostedCommentButton" data-deleteButtonId = "${id}">&#128465;</button>
-                    </div>
-                    <div>
-                        <p id="commentText">${comment}</p>
+                <p class="displayName">${name}</p>
+                <div>
+                    <div id="comment-edit-delete-container">
+                        <div class="comment">
+                            <p id="commentText">${comment}</p>
+                        </div>
+                        <div data-editButtonContainerId = '${id}' class="edit-delete-buttons">
+                            <button id="editPostedCommentButton" data-editButtonId = "${id}">&#128221;</button>
+                            <button id="deletePostedCommentButton" data-deleteButtonId = "${id}">&#128465;</button>
+                        </div>
                     </div>  
-                    
+                
                     <div 
                     class="inputToEditCommentAndButtonToSubmitEditedComment hide">
                         <input type="text" placeholder="Edit Comment" id='newInputBox' class="input-color-change">
-                        <button data-commentId="${id}" id="submitEditedCommentButton">&#9989;</button>
+                        <button data-commentId="${id}" id="submitEditedCommentButton">Submit</button>
                     </div>  
-                    </div>
                 </div>
+            </div>    
         </div>
     `
 
