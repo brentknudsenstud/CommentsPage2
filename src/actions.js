@@ -47,7 +47,6 @@ export function submitEditedMessageToReplacePreviousMessage(id) {
             alert("Please write edited comment.");
         } else if (inputTextForEditedComment !== "") {
             // replace current comment with new comment by grabbing current comment (use the id?)
-            // I don't know what to do here, I even put in a console.log to see if any event was happening and I got nothing. Frustrating that I don't know how to do this simple stuff. Very frustrating.
         }
     })
 
