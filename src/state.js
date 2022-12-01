@@ -19,8 +19,8 @@ export function deleteComment(idToDelete) {
     comments = comments.filter(({ id }) => id !== idToDelete );
 }
 
-export function editComment({ idToEdit, comment }) {
-    const commentToUpdate = comments.find(({ id }) => id === idToEdit);
+export function editComment({ id, comment }) {
+    const commentToUpdate = comments.find(({ id: id1 }) => id === id1);
 
-    commentToUpdate.comment = comment
+    commentToUpdate.comment = comment;
 }

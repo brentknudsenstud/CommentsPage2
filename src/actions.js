@@ -24,12 +24,17 @@ export function handleDeleteCommentAction(id) {
 export function handleClickedEditButton(id) {
     
     // grab the div with class inputToEditCommentAndButtonToSubmitEditedComment that pertains to this comment
-    const inputContainer = document.querySelector(`[data-commentId="${id}"`).parentElement;
+    const inputContainer = document.querySelector(`[data-editButtonId="${id}"`).parentElement.parentElement.parentElement.querySelector(".hide");
     // remove the hide class on the div with class inputToEditCommentAndButtonToSubmitEditedComment
     if (inputContainer) {
         inputContainer.classList.remove("hide");
     }
 
+}
+
+export function handleSubmitEditComment(id, comment) {
+    editComment({id, comment});
+    renderComments();
 }
 
 export function submitEditedMessageToReplacePreviousMessage(id) {

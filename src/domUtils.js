@@ -33,6 +33,21 @@ export function getEditCommentIdFromEvent(e) {
     return e.target.getAttribute('data-editButtonId');
 }
 
+export function getSubmitNewCommentIdFromEvent(e) {
+    return e.target.getAttribute('data-submitButtonId');
+}
+
+export function getEditCommentInput(id) {
+    return document.querySelector(`[data-editCommentInput="${id}"]`)
+
+}
+
+export function getEditCommentInputValue(id) {
+    const inputElement = getEditCommentInput(id);
+    return inputElement.value;
+
+}
+
 // clear inputs
 export function clearNameAndCommentInputs() {
     const nameInputElement = getNameInputValue();
@@ -70,8 +85,8 @@ function getCommentBoxAsString(name, comment, id, photo) {
                 
                     <div 
                     class="inputToEditCommentAndButtonToSubmitEditedComment hide">
-                        <input type="text" placeholder="Edit Comment" id='newInputBox' class="input-color-change">
-                        <button data-commentId="${id}" id="submitEditedCommentButton">Submit</button>
+                        <input data-editCommentInput="${id}" type="text" placeholder="Edit Comment" id='newInputBox' class="input-color-change">
+                        <button data-submitButtonId="${id}" id="submitEditedCommentButton">Submit</button>
                     </div>  
                 </div>
             </div>    
@@ -93,3 +108,4 @@ export function renderComments() {
 export function renderInvalidInputOnSubmit() {
     alert('Both name and comment need to be filled out')
 }
+
