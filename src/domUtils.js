@@ -50,6 +50,7 @@ export function getEditCommentInputValue(id) {
 
 // clear inputs
 export function clearNameAndCommentInputs() {
+    // put function above in the right place to clear display name input and comment input when Submit button is clicked
     const nameInputElement = getNameInputValue();
     const commentInputElement = getCommentInputValue();
 
