@@ -1,5 +1,5 @@
 import { handleSubmitCommentAction, handleDeleteCommentAction, handleClickedEditButton, handleSubmitEditComment } from './actions.js';
-import { getSubmitButton, getDeleteCommentIdFromEvent, getEditCommentIdFromEvent, getSubmitNewCommentIdFromEvent, getEditCommentInputValue } from "./domUtils.js";
+import { getSubmitButton, getDeleteCommentIdFromEvent, getEditCommentIdFromEvent, getSubmitNewCommentIdFromEvent, getEditCommentInputValue, clearNameAndCommentInputs } from "./domUtils.js";
 
 export function bindSubmitCommentAction() {
     const submitButton = getSubmitButton();
@@ -8,7 +8,9 @@ export function bindSubmitCommentAction() {
         handleSubmitCommentAction(); 
     })
 
+    clearNameAndCommentInputs()
 }
+
 
 export function bindDeleteActionToDeleteCommentButtons() {
     document.body.addEventListener( 'click', function ( event ) {

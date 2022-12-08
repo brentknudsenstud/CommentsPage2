@@ -1,5 +1,5 @@
 
-import { renderComments } from "./domUtils.js";
+import { renderComments} from "./domUtils.js";
 import { bindSubmitCommentAction, bindDeleteActionToDeleteCommentButtons, bindEditActionToEditCommentButtons, bindEditActionToSubmitNewCommentButtons } from './bindEventsToActions.js'
 
 
@@ -9,6 +9,7 @@ function runOnInitialLoad() {
     bindEditActionToEditCommentButtons();
     bindEditActionToSubmitNewCommentButtons();
     renderComments();
+
 }
 
 window.onload = runOnInitialLoad;
