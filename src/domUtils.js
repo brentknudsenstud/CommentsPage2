@@ -105,6 +105,8 @@ export function renderComments() {
    
     mainElement.innerHTML = commentsAsHTML;
 
+    clearNameAndCommentInputs();
+
 }
 
 export function renderInvalidInputOnSubmit() {

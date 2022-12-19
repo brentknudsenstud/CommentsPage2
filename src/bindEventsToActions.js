@@ -8,7 +8,6 @@ export function bindSubmitCommentAction() {
         handleSubmitCommentAction(); 
     })
 
-    clearNameAndCommentInputs()
 }
 
 
