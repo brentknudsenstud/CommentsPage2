@@ -107,8 +107,6 @@ export function renderComments() {
 
     // before clearing Name and Comment Inputs, I need to save them here somewhere I think according to Rich Snapp. He said I should save a copy of the name and comment before I submit it so that when I clear the name and comment inputs it is still there (but where? In localStorage? That doesn't seem necessary. What I really need to do is clear the inputs after I render the comments and that's what I'm trying to do in this function right here, but maybe I need to have it happen outside of this function and connect it to this function when the sumbit button is triggered. I'll work on it after Christmas Day 2022 on my day off. Good night. It is Christmas Eve 2022. Later...
 
-    clearNameAndCommentInputs();
-
 }
 
 export function renderInvalidInputOnSubmit() {
