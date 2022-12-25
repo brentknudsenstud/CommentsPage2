@@ -10,6 +10,7 @@ export function handleSubmitCommentAction() {
     if(isAllInputValid) {
         addComment({ photo, name, comment })
         renderComments();
+        // maybe this is where I need to put the clearNameAndCommentInputs() function with an await/async method or fetch/then method
     } else {
         renderInvalidInputOnSubmit();
     }
