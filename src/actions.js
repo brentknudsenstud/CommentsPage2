@@ -6,14 +6,17 @@ export function handleSubmitCommentAction() {
     const comment = getCommentInputValue();
     const photo = getPhotoValue();
     const isAllInputValid = [name, comment].every(input => input.length > 0);
+    const form = document.getElementById('entryBox')
 
     if(isAllInputValid) {
         addComment({ photo, name, comment })
         renderComments();
-        // maybe this is where I need to put the clearNameAndCommentInputs() function with an await/async method or fetch/then method
+        form.reset();
     } else {
         renderInvalidInputOnSubmit();
     }
+    
+    
 }
 
 export function handleDeleteCommentAction(id) {
