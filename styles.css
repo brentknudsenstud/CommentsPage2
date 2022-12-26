@@ -87,7 +87,7 @@ form#entryBox {
 }
 
 #editPostedCommentButton, #deletePostedCommentButton {
-    border-radius: 8px;
+    border-radius: 50px;
     border: solid 2px rgb(188, 188, 62);
     border: none;
     padding: 8px 12px;
@@ -100,7 +100,7 @@ form#entryBox {
 }
 
 #submitButton, #submitEditedCommentButton {
-    border-radius: 8px;
+    border-radius: 30px;
     /* border: solid 2px rgb(188, 188, 62); */
     border: none;
     padding: 8px 12px;
@@ -121,7 +121,8 @@ form#entryBox {
 
 #editPostedCommentButton:hover, #deletePostedCommentButton:hover, #submitButton:hover, #submitEditedCommentButton:hover {
     background-color: #F0EEE8;
-
+    border-bottom: 1px solid lightgray;
+    border-right: .5px solid lightgray;
 }
 
 .hide {
