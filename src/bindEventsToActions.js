@@ -58,5 +58,6 @@ export function bindEditActionToSubmitNewCommentButtons() {
         
         event.preventDefault();
     });
+    
 }
 

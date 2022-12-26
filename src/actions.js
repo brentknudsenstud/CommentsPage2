@@ -14,7 +14,6 @@ export function handleSubmitCommentAction() {
     } else {
         renderInvalidInputOnSubmit();
     }
-    
 }
 
 export function handleDeleteCommentAction(id) {

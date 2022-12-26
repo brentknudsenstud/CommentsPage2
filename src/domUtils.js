@@ -50,6 +50,7 @@ export function getEditCommentInputValue(id) {
 
 // clear inputs
 export function clearNameAndCommentInputs() {
+
     // put function above in the right place to clear display name input and comment input when Submit button is clicked
     // 12/8/2022 Rich Snapp on Slack UtahJS pointed out that I should save a copy of the name and comment before I submit it so that when I clear the name and comment inputs it is still there. Now I just have to figure out how to implement that.
     const nameInputElement = getNameInputValue();
