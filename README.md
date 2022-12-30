@@ -31,6 +31,8 @@
 - editing submitted comment [ x ]
   - click edit button [ x ]
   - display input to edit comment below the user name and profile image [ x ]
+  - submit edited comment [  ]
+  - edited comment replaces current comment [ ]
 - deleting submitted comment [ x ]
    - click delete button [ x ]
    - get rid of the listed item [ x ] 
