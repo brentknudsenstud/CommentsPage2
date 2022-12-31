@@ -6,6 +6,7 @@
    - comment includes [ ]
       - profile image placeholder [ x ]
       - actual profile image [ ]
+         - upload box to upload image [  ]
       - user name [ x ]
       - edit button [ x ]
       - delete button [ x ]
@@ -16,7 +17,7 @@
 - comment input piece [ x ]
    - display name input [ x ]
    - comment input [ x ]
-   - submit button [ x ]
+   - submit button [ x ]   
 
 ## User Stories
 
@@ -31,11 +32,12 @@
 - editing submitted comment [ x ]
   - click edit button [ x ]
   - display input to edit comment below the user name and profile image [ x ]
-  - submit edited comment [  ]
-  - edited comment replaces current comment [ ]
+   - include original comment in the displayed input [  ]
+  - submit edited comment [ x ]
+  - edited comment replaces current comment [ x ]
 - deleting submitted comment [ x ]
    - click delete button [ x ]
    - get rid of the listed item [ x ] 
 - selecting profile image
-   - uploading profile image
-   - show the profile image as part of the comment when it is submitted
+   - upload profile image [ ]
+   - show the profile image as part of the comment when it is submitted [ ]
