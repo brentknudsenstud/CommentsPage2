@@ -89,7 +89,7 @@ function getCommentBoxAsString(name, comment, id, photo) {
                     <div 
                     class="inputToEditCommentAndButtonToSubmitEditedComment hide">
                         <input data-editCommentInput="${id}" type="text" placeholder="Edit Comment" id='newInputBox' class="input-color-change">
-                        <button data-submitButtonId="${id}" id="submitEditedCommentButton"><span style="text-shadow: 1px 1px 4px gray; color: green; font-size: 28px">&#10146;</span></button>
+                        <button data-submitButtonId="${id}" id="submitEditedCommentButton" style="text-shadow: 1px 1px 4px gray; color: green; font-size: 28px">&#10146;</button>
                     </div>  
                 </div>
             </div>    
