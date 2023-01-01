@@ -21,6 +21,6 @@ export function deleteComment(idToDelete) {
 
 export function editComment({ id, comment }) {
     const commentToUpdate = comments.find(({ id: id1 }) => id === id1);
-
+    // add functionality so that original comment to edit shows up in input box
     commentToUpdate.comment = comment;
 }
