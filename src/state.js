@@ -26,5 +26,11 @@ export function editComment({ id, comment }) {
     // if edit button is clicked,
     // then grab current comment and attach current comment and display in edit input box
     // then when sumbit button is clicked, replace current comment with edited version of comment.
+
+    // <input type="text" id="input" onkeyup="writethis()" />
+    // function writethis() { // the function 
+    // var h = document.getElementById('input').value; // the value
+    // document.getElementsByClassName('mainBody').innerHTML = h; // the input
+    // }
     commentToUpdate.comment = comment;
 }
