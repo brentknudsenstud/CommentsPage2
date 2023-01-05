@@ -26,16 +26,19 @@ export function bindDeleteActionToDeleteCommentButtons() {
     });
 }
 
+const addCurrentCommentToEditInputBox = document.getElementById('commentText');
+
 export function bindEditActionToEditCommentButtons() {
     document.body.addEventListener( 'click', function ( event ) {
        
         const editButtonId = getEditCommentIdFromEvent(event);
+        // const addCommentTextToInputBox = addCurrentCommentToEditInputBox;
         const isClickedItemAnEditButton = !!editButtonId;
+        addCurrentCommentToEditInputBox.value += innerHTML;
         
         if(isClickedItemAnEditButton) {
             handleClickedEditButton(editButtonId);
-            // when edit button is clicked, populate an input box (see actions.js file)
-            
+            // when edit button is clicked, populate an input box (see actions.js file) 
         };
         
         event.preventDefault();
