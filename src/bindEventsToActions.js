@@ -33,8 +33,8 @@ export function bindEditActionToEditCommentButtons() {
        
         const editButtonId = getEditCommentIdFromEvent(event);
         // const addCommentTextToInputBox = addCurrentCommentToEditInputBox;
-        const isClickedItemAnEditButton = !!editButtonId;
-        addCurrentCommentToEditInputBox.value += innerHTML;
+        // const isClickedItemAnEditButton = !!editButtonId;
+        // addCurrentCommentToEditInputBox.value += innerHTML;
         
         if(isClickedItemAnEditButton) {
             handleClickedEditButton(editButtonId);
