@@ -86,6 +86,16 @@ form#entryBox {
     width: 40%;
 }
 
+.comment {
+    flex-grow: 1;
+}
+
+.edit-delete-buttons {
+    flex-grow: 3;
+}
+
+
+
 #editPostedCommentButton, #deletePostedCommentButton {
     border-radius: 50px;
     border: solid 2px rgb(188, 188, 62);
@@ -132,6 +142,7 @@ form#entryBox {
 #comment-edit-delete-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: none;
     justify-content: flex-start;
     align-items: center;
 }
